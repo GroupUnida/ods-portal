@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#050A1D">
 <meta name="description" content="Portal accesible y trilingüe (castellano, guaraní e inglés) para conocer los 17 Objetivos de Desarrollo Sostenible (ODS) de la Agenda 2030: qué son, por qué importan y qué podés hacer.">
-<title>ODS Accesible: los 17 Objetivos de Desarrollo Sostenible para todas las personas</title>
+<title>SDGs For Everyone: los 17 Objetivos de Desarrollo Sostenible para todas las personas</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&family=Yellowtail&display=swap">
@@ -94,7 +94,7 @@ button{font:inherit;color:inherit}
   .js .menu a{width:100%;border-bottom:1px solid var(--line)}
 }
 @media (max-width:47.99rem){.btn-acc-top{display:none !important}}
-@media (max-width:26rem){.marca .m2{display:none}}
+@media (max-width:26rem){.marca{flex-wrap:wrap;gap:.15rem .4rem}.marca .m1{font-size:1.5rem}.marca .m2{font-size:1.2rem}}
 .acc-flotante{position:fixed;left:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:150;width:min(3.6rem,72px);height:min(3.6rem,72px);border-radius:50%;border:2px solid var(--ink);background:var(--cyan);color:var(--ink);display:grid;place-items:center;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.4);transition:background .2s}
 .acc-flotante svg{width:min(2rem,40px);height:min(2rem,40px)}
 .acc-flotante:hover,.acc-flotante[aria-expanded="true"]{background:#FFFFFF}
@@ -755,7 +755,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
 <p class="sr" id="anuncio" role="status" aria-live="polite"></p>
 <header class="sitio oscuro" id="arriba">
   <div class="wrap barra">
-    <a class="marca" href="#contenido"><span class="m1"><span class="t" lang="es">ODS</span><span class="t" lang="gn">ODS</span><span class="t" lang="en">SDGs</span></span> <span class="m2"><span class="t" lang="es">accesible</span><span class="t" lang="gn">accesible</span><span class="t" lang="en">for everyone</span></span></a>
+    <a class="marca" href="#contenido"><span class="m1" lang="en">SDGs</span> <span class="m2" lang="en">For Everyone</span></a>
     <button type="button" class="btn btn-ghost btn-chico menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span class="t" lang="es">Menú</span><span class="t" lang="gn">Menú</span><span class="t" lang="en">Menu</span></button>
     <nav class="menu" id="menu" aria-label="Principal" data-al-es="Principal" data-al-gn="Ñemoĩ guasu" data-al-en="Main">
       <ul>
@@ -854,8 +854,8 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       <p class="kicker"><span class="t" lang="es">Portal educativo · Facultad de Ingeniería UNIDA</span><span class="t" lang="gn">Portal mbo'epy · Facultad de Ingeniería UNIDA</span><span class="t" lang="en">Educational portal · UNIDA School of Engineering</span></p>
       <p class="tagline"><span class="t" lang="es">Personas • Planeta • Prosperidad • Paz • Alianzas</span><span class="t" lang="gn">Tapichakuéra • Yvy • Mba'erepy • Py'aguapy • Joaju</span><span class="t" lang="en">People • Planet • Prosperity • Peace • Partnership</span></p>
       <h1 class="brand" id="titulo-principal">
-        <span class="word"><span class="t" lang="es">ODS</span><span class="t" lang="gn">ODS</span><span class="t" lang="en">SDGs</span></span>
-        <span class="deg"><span class="t" lang="es">accesible</span><span class="t" lang="gn">accesible</span><span class="t" lang="en">for everyone</span></span>
+        <span class="word" lang="en">SDGs</span>
+        <span class="deg" lang="en">For Everyone</span>
       </h1>
       <p class="subtitle"><span class="t" lang="es">Los 17 Objetivos de Desarrollo Sostenible, explicados para todas las personas.</span><span class="t" lang="gn">Umi 17 Tembipota Tekoporã Ipukúva, ojehechauka opavavépe guarã.</span><span class="t" lang="en">The 17 Sustainable Development Goals, explained for everyone.</span></p>
       <p class="bajada"><span class="t" lang="es">Conocé qué son los ODS, por qué importan y qué podés hacer vos. Este portal se puede leer, escuchar y recorrer con teclado, y vos elegís cómo verlo.</span><span class="t" lang="gn">Eikuaa mba'épa ha'e umi ODS, mba'ére iñimportante ha mba'épa ikatu rejapo nde. Ko portal ikatu emoñe'ẽ, ehendu ha eiporu teclado reheve, ha nde reiporavo mba'éichapa rehecha.</span><span class="t" lang="en">Learn what the SDGs are, why they matter and what you can do. This portal can be read, listened to and navigated with a keyboard, and you choose how to see it.</span></p>
@@ -1632,7 +1632,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       <p class="big"><span class="t" lang="es">No dejar a </span><span class="t" lang="gn">Avave ani </span><span class="t" lang="en">Leave no one </span><span class="b2"><span class="t" lang="es">nadie atrás</span><span class="t" lang="gn">opyta tapykuépe</span><span class="t" lang="en">behind</span></span></p>
       <div>
         <dl>
-          <div><dt>Portal</dt><dd><span class="t" lang="es">ODS Accesible · educativo y no oficial</span><span class="t" lang="gn">ODS Accesible · mbo'epy, ndaha'éi oficial</span><span class="t" lang="en">Accessible SDGs · educational, unofficial</span></dd></div>
+          <div><dt>Portal</dt><dd><span class="t" lang="es">SDGs For Everyone · educativo y no oficial</span><span class="t" lang="gn">SDGs For Everyone · mbo'epy, ndaha'éi oficial</span><span class="t" lang="en">SDGs For Everyone · educational, unofficial</span></dd></div>
           <div><dt><span class="t" lang="es">Fuente</span><span class="t" lang="gn">Fuente</span><span class="t" lang="en">Source</span></dt><dd><span class="t" lang="es">Agenda 2030 de las Naciones Unidas</span><span class="t" lang="gn">Agenda 2030 Tetã Ñemohenda (ONU) pegua</span><span class="t" lang="en">United Nations 2030 Agenda</span></dd></div>
           <div><dt><span class="t" lang="es">Idiomas</span><span class="t" lang="gn">Ñe'ẽ</span><span class="t" lang="en">Languages</span></dt><dd>Castellano · Avañe'ẽ · English</dd></div>
           <div><dt><span class="t" lang="es">Facultad</span><span class="t" lang="gn">Facultad</span><span class="t" lang="en">School</span></dt><dd><span class="t" lang="es">Facultad de Ingeniería · UNIDA</span><span class="t" lang="gn">Facultad de Ingeniería · UNIDA</span><span class="t" lang="en">School of Engineering · UNIDA</span></dd></div>
@@ -1649,14 +1649,14 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       <div><strong>Agenda 2030</strong><span class="t" lang="es">Objetivos de Desarrollo Sostenible · Naciones Unidas</span><span class="t" lang="gn">Tembipota Tekoporã Ipukúva · ONU</span><span class="t" lang="en">Sustainable Development Goals · United Nations</span></div>
     </div>
     <div class="legal texto">
-      <p><span class="t" lang="es">ODS Accesible es un portal educativo no oficial. Los contenidos resumen la Agenda 2030 de las Naciones Unidas; los colores de cada objetivo siguen su identidad visual.</span><span class="t" lang="gn">ODS Accesible ha'e peteĩ portal mbo'epy ndaha'éiva oficial. Umi marandu omombyky Agenda 2030 Tetã Ñemohenda (ONU) pegua; umi sa'y ojapo hembiapoite.</span><span class="t" lang="en">Accessible SDGs is an unofficial educational portal. Its content summarizes the United Nations 2030 Agenda; each goal's colors follow its visual identity.</span></p>
+      <p><span class="t" lang="es">SDGs For Everyone es un portal educativo no oficial. Los contenidos resumen la Agenda 2030 de las Naciones Unidas; los colores de cada objetivo siguen su identidad visual.</span><span class="t" lang="gn">SDGs For Everyone ha'e peteĩ portal mbo'epy ndaha'éiva oficial. Umi marandu omombyky Agenda 2030 Tetã Ñemohenda (ONU) pegua; umi sa'y ojapo hembiapoite.</span><span class="t" lang="en">SDGs For Everyone is an unofficial educational portal. Its content summarizes the United Nations 2030 Agenda; each goal's colors follow its visual identity.</span></p>
     </div>
   </div>
 </footer>
 <div class="atraer" id="atraer" role="dialog" aria-modal="true" aria-labelledby="atraer-t" hidden>
   <div class="atraer-anillo" aria-hidden="true"><span class="orbita" style="--a:0.00deg"><span class="ico-caja" data-n="1" style="--c0:#E5243B;--t0:#FFFFFF"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-1"/></svg></span></span><span class="orbita" style="--a:21.18deg"><span class="ico-caja" data-n="2" style="--c0:#DDA63A;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-2"/></svg></span></span><span class="orbita" style="--a:42.35deg"><span class="ico-caja" data-n="3" style="--c0:#4C9F38;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-3"/></svg></span></span><span class="orbita" style="--a:63.53deg"><span class="ico-caja" data-n="4" style="--c0:#C5192D;--t0:#FFFFFF"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-4"/></svg></span></span><span class="orbita" style="--a:84.71deg"><span class="ico-caja" data-n="5" style="--c0:#FF3A21;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-5"/></svg></span></span><span class="orbita" style="--a:105.88deg"><span class="ico-caja" data-n="6" style="--c0:#26BDE2;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-6"/></svg></span></span><span class="orbita" style="--a:127.06deg"><span class="ico-caja" data-n="7" style="--c0:#FCC30B;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-7"/></svg></span></span><span class="orbita" style="--a:148.24deg"><span class="ico-caja" data-n="8" style="--c0:#A21942;--t0:#FFFFFF"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-8"/></svg></span></span><span class="orbita" style="--a:169.41deg"><span class="ico-caja" data-n="9" style="--c0:#FD6925;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-9"/></svg></span></span><span class="orbita" style="--a:190.59deg"><span class="ico-caja" data-n="10" style="--c0:#DD1367;--t0:#FFFFFF"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-10"/></svg></span></span><span class="orbita" style="--a:211.76deg"><span class="ico-caja" data-n="11" style="--c0:#FD9D24;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-11"/></svg></span></span><span class="orbita" style="--a:232.94deg"><span class="ico-caja" data-n="12" style="--c0:#BF8B2E;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-12"/></svg></span></span><span class="orbita" style="--a:254.12deg"><span class="ico-caja" data-n="13" style="--c0:#3F7E44;--t0:#FFFFFF"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-13"/></svg></span></span><span class="orbita" style="--a:275.29deg"><span class="ico-caja" data-n="14" style="--c0:#0A97D9;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-14"/></svg></span></span><span class="orbita" style="--a:296.47deg"><span class="ico-caja" data-n="15" style="--c0:#56C02B;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-15"/></svg></span></span><span class="orbita" style="--a:317.65deg"><span class="ico-caja" data-n="16" style="--c0:#00689D;--t0:#FFFFFF"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-16"/></svg></span></span><span class="orbita" style="--a:338.82deg"><span class="ico-caja" data-n="17" style="--c0:#19486A;--t0:#FFFFFF"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-17"/></svg></span></span></div>
   <div class="atraer-texto">
-    <h2 class="atraer-marca" id="atraer-t"><span class="word">ODS</span><span class="deg">accesible</span></h2>
+    <h2 class="atraer-marca" id="atraer-t"><span class="word" lang="en">SDGs</span><span class="deg" lang="en">For Everyone</span></h2>
     <p lang="es">Tocá la pantalla para jugar y aprender</p>
     <p lang="gn">Epoko pantalla ehugua ha eñemoarandu hag̃ua</p>
     <p lang="en">Tap the screen to play and learn</p>
@@ -1701,7 +1701,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
   var VOZ_LOCAL = { es: 'es-419', gn: 'es-419', en: 'en-US' };
   var S = {
     es: {
-      titulo: 'ODS Accesible: los 17 Objetivos de Desarrollo Sostenible para todas las personas',
+      titulo: 'SDGs For Everyone: los 17 Objetivos de Desarrollo Sostenible para todas las personas',
       todos: 'Mostrando los 17 objetivos.',
       area: function (n, a) { return 'Mostrando ' + n + (n === 1 ? ' objetivo' : ' objetivos') + ' del área ' + a + '.'; },
       areas: { personas: 'personas', planeta: 'planeta', prosperidad: 'prosperidad', paz: 'paz', alianzas: 'alianzas' },
@@ -1733,7 +1733,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       vozOn: 'Leer al tocar está activado. Tocá cualquier texto para escucharlo.'
     },
     gn: {
-      titulo: 'ODS Accesible: umi 17 Tembipota Tekoporã Ipukúva opavavépe guarã',
+      titulo: 'SDGs For Everyone: umi 17 Tembipota Tekoporã Ipukúva opavavépe guarã',
       todos: 'Ojehechauka umi 17 tembipota.',
       area: function (n, a) { return 'Ojehechauka ' + n + ' tembipota atýgui ' + a + '.'; },
       areas: { personas: 'tapichakuéra', planeta: 'yvy', prosperidad: "mba'erepy", paz: "py'aguapy", alianzas: 'joaju' },
@@ -1765,7 +1765,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       vozOn: "Omoñe'ẽ repokóvo oñemyendy. Epoko oimeraẽ moñe'ẽ rehendu hag̃ua."
     },
     en: {
-      titulo: 'Accessible SDGs: the 17 Sustainable Development Goals for everyone',
+      titulo: 'SDGs For Everyone: the 17 Sustainable Development Goals for everyone',
       todos: 'Showing all 17 goals.',
       area: function (n, a) { return 'Showing ' + n + (n === 1 ? ' goal' : ' goals') + ' in the ' + a + ' area.'; },
       areas: { personas: 'people', planeta: 'planet', prosperidad: 'prosperity', paz: 'peace', alianzas: 'partnership' },
@@ -2380,7 +2380,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       lista.forEach(function (r) { filas.push([c(r.fecha), c(r.idioma), c(r.facil), c((r.usos || []).join(' ')), c(r.comentario || '')].join(',')); });
       var blob = new Blob(['﻿' + filas.join('\n')], { type: 'text/csv;charset=utf-8' });
       var a = document.createElement('a');
-      a.href = URL.createObjectURL(blob); a.download = 'opiniones-ods-accesible.csv';
+      a.href = URL.createObjectURL(blob); a.download = 'opiniones-sdgs-for-everyone.csv';
       document.body.appendChild(a); a.click(); a.remove();
     });
   }
@@ -2417,7 +2417,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       publicado: '¡Listo! Tu compromiso ya está en el muro.', muroVacio: 'Todavía no hay compromisos. ¡Sé la primera persona!',
       muroStats: function (n, top) { return n + (n === 1 ? ' compromiso' : ' compromisos') + ' · ODS más elegido: ' + top; },
       ejemplo: 'Por ejemplo: ', borrar: 'Borrar este compromiso', compromisoCon: 'Compromiso con el ',
-      muroLista: 'Compromisos publicados', tituloJuegos: 'Zona de juegos · ODS Accesible'
+      muroLista: 'Compromisos publicados', tituloJuegos: 'Zona de juegos · SDGs For Everyone'
     },
     gn: {
       carta: function (i) { return 'Kárta ' + i; }, bocaAbajo: 'ñemi', icono: "ra'ãnga", nombre: 'téra', encontrada: 'ojuhúma ijoja',
@@ -2448,7 +2448,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       publicado: "¡Oĩma! Ne ñe'ẽme'ẽ oĩma muro-pe.", muroVacio: "Ndaipóri gueteri ñe'ẽme'ẽ. ¡Eñepyrũ nde!",
       muroStats: function (n, top) { return n + " ñe'ẽme'ẽ · ODS ojeporavovéva: " + top; },
       ejemplo: 'Techapyrã: ', borrar: "Embogue ko ñe'ẽme'ẽ", compromisoCon: "Ñe'ẽme'ẽ ",
-      muroLista: "Ñe'ẽme'ẽ oñemoherakuãva", tituloJuegos: 'Ñembosarái renda · ODS Accesible'
+      muroLista: "Ñe'ẽme'ẽ oñemoherakuãva", tituloJuegos: 'Ñembosarái renda · SDGs For Everyone'
     },
     en: {
       carta: function (i) { return 'Card ' + i; }, bocaAbajo: 'face down', icono: 'icon', nombre: 'name', encontrada: 'match found',
@@ -2479,7 +2479,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       publicado: 'Done! Your pledge is on the wall.', muroVacio: 'No pledges yet. Be the first!',
       muroStats: function (n, top) { return n + (n === 1 ? ' pledge' : ' pledges') + ' · Most chosen: ' + top; },
       ejemplo: 'For example: ', borrar: 'Delete this pledge', compromisoCon: 'Pledge for ',
-      muroLista: 'Published pledges', tituloJuegos: 'Game zone · Accessible SDGs'
+      muroLista: 'Published pledges', tituloJuegos: 'Game zone · SDGs For Everyone'
     }
   };
   function LG() { return G[prefs.idioma]; }
