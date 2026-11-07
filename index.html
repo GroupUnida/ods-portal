@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#050A1D">
-<meta name="description" content="Portal accesible y trilingüe (castellano, guaraní e inglés) para conocer los 17 Objetivos de Desarrollo Sostenible (ODS) de la Agenda 2030: qué son, por qué importan y qué podés hacer.">
-<title>SDGs for everyone: los 17 Objetivos de Desarrollo Sostenible para todas las personas</title>
+<meta name="description" content="SDGs for everyone: portal accesible y trilingüe (castellano, guaraní e inglés) para conocer los 17 Objetivos de Desarrollo Sostenible (ODS) de la Agenda 2030: qué son, por qué importan y qué podés hacer.">
+<title>SDGs for everyone: Objetivos de Desarrollo Sostenible para todas las personas</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&family=Yellowtail&display=swap">
@@ -78,6 +78,7 @@ button{font:inherit;color:inherit}
 .marca .m1{font-family:var(--display);font-size:1.75rem;line-height:1;letter-spacing:.02em}
 .marca .m2{font-family:var(--script);color:var(--cyan);font-size:1.6rem;line-height:1;display:inline-block;transform:rotate(-6deg)}
 .menu ul{display:flex;flex-wrap:wrap;gap:0 1.35rem}
+@media (min-width:60rem) and (max-width:92rem){.barra{gap:.4rem .9rem}.menu ul{gap:0 .95rem}.menu a{font-size:.9rem}}
 .menu a{display:inline-flex;align-items:center;min-height:2.75rem;font-size:.95rem;font-weight:500;text-decoration:none;border-bottom:2px solid transparent}
 .menu a:hover{color:var(--cyan);border-bottom-color:var(--cyan)}
 .menu-btn{display:none}
@@ -153,6 +154,30 @@ button{font:inherit;color:inherit}
 .brand{margin-top:.6rem;display:flex;flex-direction:column;align-items:center}
 .brand .word{font-family:var(--display);font-weight:400;font-size:clamp(5.5rem,3rem + 16vw,13rem);line-height:.9;letter-spacing:.01em}
 .brand .deg{font-family:var(--script);color:var(--cyan);font-size:clamp(2.8rem,1.6rem + 5vw,6rem);line-height:1;margin-top:-.05em;margin-bottom:.35em;transform:rotate(-6deg);text-shadow:3px 4px 0 rgba(5,10,29,.55);text-wrap:balance}
+.brand .pre{font-family:var(--script);color:var(--cyan);font-size:clamp(1.9rem,1.1rem + 2.6vw,3.4rem);line-height:1;transform:rotate(-6deg);margin-bottom:-.15em;text-shadow:3px 4px 0 rgba(5,10,29,.55)}
+.brand .full{display:block;font-weight:700;font-size:clamp(1.05rem,.85rem + 1.3vw,1.85rem);letter-spacing:.08em;text-transform:uppercase;margin-top:.45em;text-wrap:balance;max-width:22ch}
+.atraer-marca .full{display:block;font-weight:700;font-size:clamp(1rem,.8rem + 1.5vmin,1.6rem);letter-spacing:.08em;text-transform:uppercase;margin-top:.3em}
+:root[data-tema="claro"] .brand .pre{text-shadow:none}
+.acceso-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1.6rem}
+.acceso-card{background:var(--s-card);border:1px solid var(--s-borde);border-radius:18px;padding:1.4rem 1.4rem 1.5rem;display:flex;flex-direction:column;gap:.7rem}
+.acceso-card h3{font-size:1.15rem;margin:0;display:flex;align-items:center;gap:.5rem}
+.acceso-card h3 svg{width:22px;height:22px;stroke:var(--s-acento);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.acceso-card p{margin:0;color:var(--s-sub)}
+.acceso-card .cta-row{margin-top:auto;gap:.6rem}
+.acceso-card .btn{font-size:.95rem}
+.buscador-ods{display:flex;gap:.5rem}
+.buscador-ods input{flex:1;min-width:0}
+.res-ods{list-style:none;margin:.4rem 0 0;padding:0;display:grid;gap:.45rem;max-height:17rem;overflow:auto}
+.res-ods a{display:flex;gap:.7rem;align-items:flex-start;padding:.55rem .6rem;border-radius:12px;border:1px solid var(--s-borde);color:inherit;text-decoration:none}
+.res-ods a:hover,.res-ods a:focus-visible{background:var(--s-suave);outline:2px solid var(--s-foco)}
+.res-ods .res-num{flex:none;width:2.1rem;height:2.1rem;border-radius:8px;display:grid;place-items:center;font-family:var(--display);font-size:1.1rem;background:var(--c0);color:var(--t0)}
+.res-ods b{display:block;line-height:1.2}
+.res-ods small{color:var(--s-sub)}
+.res-estado{font-size:.9rem;color:var(--s-sub);margin-top:.5rem}
+.qr-caja{display:flex;gap:1rem;align-items:center}
+.qr{width:132px;height:132px;border-radius:12px;flex:none;border:4px solid #fff}
+.canal-logo{font-family:var(--display);font-size:1.6rem;letter-spacing:.02em;color:var(--s-acento);text-transform:uppercase}
+@media (max-width:52rem){.acceso-grid{grid-template-columns:1fr}}
 .subtitle{margin:1.6rem auto 0;max-width:34ch;font-size:clamp(1.15rem,1rem + .9vw,1.5rem);font-weight:600;line-height:1.35;text-wrap:balance}
 .bajada{margin:1rem auto 0;max-width:56ch;color:var(--mist)}
 .facts{margin:1.9rem auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem 2.1rem;font-size:1rem}
@@ -561,7 +586,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
 .atraer-texto{position:relative;display:flex;flex-direction:column;align-items:center;gap:.4rem;max-width:min(70vmin,32rem)}
 .atraer-marca{display:flex;flex-direction:column;align-items:center;margin-bottom:.6rem}
 .atraer-marca .word{font-family:var(--display);font-weight:400;font-size:clamp(4rem,2rem + 10vmin,9rem);line-height:.9}
-.atraer-marca .deg{margin-top:-.05em;margin-bottom:.35em;font-family:var(--script);font-size:clamp(2.2rem,1rem + 5vmin,4.5rem);color:var(--cyan);transform:rotate(-6deg)}
+.atraer-marca .deg{margin-top:-.05em;margin-bottom:.1em;font-family:var(--script);font-size:clamp(1.8rem,1rem + 3.5vmin,3.4rem);color:var(--cyan);transform:rotate(-6deg)}
 .atraer p{font-size:clamp(1rem,.8rem + 1.2vmin,1.5rem);font-weight:500}
 .atraer p[lang="es"]{font-size:clamp(1.2rem,.9rem + 1.8vmin,2rem);font-weight:600}
 .atraer .btn{margin-top:1rem;flex-wrap:wrap;overflow-wrap:normal;max-width:100%}
@@ -787,6 +812,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
         <li><a href="#trivia"><span class="t" lang="es">Trivia</span><span class="t" lang="gn">Porandu</span><span class="t" lang="en">Quiz</span></a></li>
         <li><a href="#juegos"><span class="t" lang="es">Jugá</span><span class="t" lang="gn">Ehugua</span><span class="t" lang="en">Play</span></a></li>
         <li><a href="#opinion"><span class="t" lang="es">Opinión</span><span class="t" lang="gn">Remiandu</span><span class="t" lang="en">Feedback</span></a></li>
+        <li><a href="#acceso"><span class="t" lang="es">Recursos</span><span class="t" lang="gn">Tembiporu</span><span class="t" lang="en">Resources</span></a></li>
         <li><a href="#accesibilidad"><span class="t" lang="es">Sobre el portal</span><span class="t" lang="gn">Portal rehegua</span><span class="t" lang="en">About</span></a></li>
       </ul>
     </nav>
@@ -876,17 +902,18 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
     <svg class="burst" viewBox="0 0 200 200" aria-hidden="true"><g stroke="currentColor" stroke-width="9" stroke-linecap="round" fill="none"><path d="M100 18v164"/><path d="M28 60l144 80"/><path d="M28 140l144-80"/><path d="M58 26l84 148"/><path d="M142 26L58 174"/></g></svg>
     <svg class="burst b2" viewBox="0 0 200 200" aria-hidden="true"><g stroke="currentColor" stroke-width="9" stroke-linecap="round" fill="none"><path d="M100 18v164"/><path d="M28 60l144 80"/><path d="M28 140l144-80"/></g></svg>
     <div class="wrap">
-      <p class="kicker"><span class="t" lang="es">Portal educativo · Facultad de Ingeniería UNIDA</span><span class="t" lang="gn">Portal mbo'epy · Facultad de Ingeniería UNIDA</span><span class="t" lang="en">Educational portal · UNIDA School of Engineering</span></p>
+      <p class="kicker"><span class="t" lang="es">Canal de divulgación de los ODS del Workshop Ingeniería 360°, Facultad de Ingeniería UNIDA</span><span class="t" lang="gn">Workshop Ingeniería 360° ODS momarandu renda, Facultad de Ingeniería UNIDA</span><span class="t" lang="en">SDG outreach channel of the Engineering 360° Workshop, UNIDA School of Engineering</span></p>
       <p class="tagline"><span class="t" lang="es">Personas • Planeta • Prosperidad • Paz • Alianzas</span><span class="t" lang="gn">Tapichakuéra • Yvy • Mba'erepy • Py'aguapy • Joaju</span><span class="t" lang="en">People • Planet • Prosperity • Peace • Partnership</span></p>
       <h1 class="brand" id="titulo-principal">
-        <span class="word" lang="en">SDGs</span>
-        <span class="deg" lang="en">for everyone</span>
+        <span class="pre" lang="en">SDGs for everyone</span>
+        <span class="word"><span class="t" lang="es">ODS</span><span class="t" lang="gn">ODS</span><span class="t" lang="en">SDGs</span></span>
+        <span class="full"><span class="t" lang="es">Objetivos de Desarrollo Sostenible</span><span class="t" lang="gn">Tembipota Tekoporã Ipukúva</span><span class="t" lang="en">Sustainable Development Goals</span></span>
       </h1>
       <p class="subtitle"><span class="t" lang="es">Los 17 Objetivos de Desarrollo Sostenible, explicados para todas las personas.</span><span class="t" lang="gn">Umi 17 Tembipota Tekoporã Ipukúva, ojehechauka opavavépe guarã.</span><span class="t" lang="en">The 17 Sustainable Development Goals, explained for everyone.</span></p>
       <p class="bajada"><span class="t" lang="es">Conocé qué son los ODS, por qué importan y qué podés hacer vos. Este portal se puede leer, escuchar y recorrer con teclado, y vos elegís cómo verlo.</span><span class="t" lang="gn">Eikuaa mba'épa ha'e umi ODS, mba'ére iñimportante ha mba'épa ikatu rejapo nde. Ko portal ikatu emoñe'ẽ, ehendu ha eiporu teclado reheve, ha nde reiporavo mba'éichapa rehecha.</span><span class="t" lang="en">Learn what the SDGs are, why they matter and what you can do. This portal can be read, listened to and navigated with a keyboard, and you choose how to see it.</span></p>
       <div class="facts">
-        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg><strong><span class="t" lang="es">Agenda 2030 · ONU</span><span class="t" lang="gn">Agenda 2030 · ONU</span><span class="t" lang="en">2030 Agenda · UN</span></strong></span>
-        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Castellano · Avañe'ẽ · English</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg><strong><span class="t" lang="es">Agenda 2030, ONU</span><span class="t" lang="gn">Agenda 2030, ONU</span><span class="t" lang="en">2030 Agenda, UN</span></strong></span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Castellano, Avañe'ẽ, English</span>
         <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="7.2" r="1.3" fill="currentColor" stroke="none"/><path d="M7.5 10l4.5 1 4.5-1M12 11v3.5M12 14.5l-2.5 4M12 14.5l2.5 4"/></svg><span class="t" lang="es">Pensado para todas las personas</span><span class="t" lang="gn">Opavavépe guarã</span><span class="t" lang="en">Designed for everyone</span></span>
       </div>
       <div class="cta-row">
@@ -930,6 +957,44 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
         <li><b>193</b><span class="t" lang="es">países</span><span class="t" lang="gn">tetã</span><span class="t" lang="en">countries</span></li>
         <li><b>5</b><span class="t" lang="es">áreas</span><span class="t" lang="gn">aty</span><span class="t" lang="en">areas</span></li>
       </ul>
+    </div>
+  </section>
+  <section class="seccion claro" id="acceso" aria-labelledby="t-acceso">
+    <div class="wrap">
+      <h2 class="h2" id="t-acceso"><span class="t" lang="es">Acceso rápido y canal formal de divulgación</span><span class="t" lang="gn">Jeike pya'e ha momarandu renda oficial</span><span class="t" lang="en">Quick access and official outreach channel</span></h2>
+      <p class="lead"><span class="t" lang="es">Tres formas de llegar a la información sin vueltas: buscá un objetivo por palabra, compartí el portal con un enlace o código QR, y descargá la guía rápida.</span><span class="t" lang="gn">Mbohapy tape reguahẽ hag̃ua pya'e marandúpe: eheka peteĩ tembipota ñe'ẽ rupi, emoherakuã portal link térã QR rupi, ha emboguejy guía pya'e.</span><span class="t" lang="en">Three ways to reach the information quickly: search for a goal by keyword, share the portal with a link or QR code, and download the quick guide.</span></p>
+      <div class="acceso-grid">
+        <div class="acceso-card">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span class="t" lang="es">Buscá un objetivo</span><span class="t" lang="gn">Eheka peteĩ tembipota</span><span class="t" lang="en">Search for a goal</span></h3>
+          <p><span class="t" lang="es">Escribí una palabra (agua, trabajo, clima, escuela…) y abrí la ficha directamente.</span><span class="t" lang="gn">Ehai peteĩ ñe'ẽ (y, tembiapo, ára, mbo'ehao…) ha eipe'a ficha pya'e.</span><span class="t" lang="en">Type a word (water, work, climate, school…) and open the card directly.</span></p>
+          <form class="buscador-ods" role="search" id="buscador-ods" onsubmit="return false">
+            <label class="sr" for="buscar-ods"><span class="t" lang="es">Buscar un objetivo</span><span class="t" lang="gn">Eheka tembipota</span><span class="t" lang="en">Search a goal</span></label>
+            <input class="campo-txt" type="search" id="buscar-ods" autocomplete="off" placeholder="agua, trabajo, clima…" data-ph-es="agua, trabajo, clima…" data-ph-gn="y, tembiapo, ára…" data-ph-en="water, work, climate…">
+          </form>
+          <p class="res-estado" id="res-estado" aria-live="polite"></p>
+          <ul class="res-ods" id="res-ods"></ul>
+        </div>
+        <div class="acceso-card">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3M21 14v7h-4"/></svg><span class="t" lang="es">Compartí el portal</span><span class="t" lang="gn">Emoherakuã portal</span><span class="t" lang="en">Share the portal</span></h3>
+          <div class="qr-caja"><svg class="qr" viewBox="0 0 33 33" role="img" aria-label="Código QR del portal" shape-rendering="crispEdges"><rect width="100%" height="100%" fill="#fff"/><path d="M2,2H3V3H2zM3,2H4V3H3zM4,2H5V3H4zM5,2H6V3H5zM6,2H7V3H6zM7,2H8V3H7zM8,2H9V3H8zM12,2H13V3H12zM13,2H14V3H13zM15,2H16V3H15zM20,2H21V3H20zM24,2H25V3H24zM25,2H26V3H25zM26,2H27V3H26zM27,2H28V3H27zM28,2H29V3H28zM29,2H30V3H29zM30,2H31V3H30zM2,3H3V4H2zM8,3H9V4H8zM10,3H11V4H10zM11,3H12V4H11zM13,3H14V4H13zM14,3H15V4H14zM16,3H17V4H16zM20,3H21V4H20zM24,3H25V4H24zM30,3H31V4H30zM2,4H3V5H2zM4,4H5V5H4zM5,4H6V5H5zM6,4H7V5H6zM8,4H9V5H8zM10,4H11V5H10zM12,4H13V5H12zM14,4H15V5H14zM20,4H21V5H20zM22,4H23V5H22zM24,4H25V5H24zM26,4H27V5H26zM27,4H28V5H27zM28,4H29V5H28zM30,4H31V5H30zM2,5H3V6H2zM4,5H5V6H4zM5,5H6V6H5zM6,5H7V6H6zM8,5H9V6H8zM10,5H11V6H10zM11,5H12V6H11zM13,5H14V6H13zM14,5H15V6H14zM15,5H16V6H15zM19,5H20V6H19zM24,5H25V6H24zM26,5H27V6H26zM27,5H28V6H27zM28,5H29V6H28zM30,5H31V6H30zM2,6H3V7H2zM4,6H5V7H4zM5,6H6V7H5zM6,6H7V7H6zM8,6H9V7H8zM12,6H13V7H12zM18,6H19V7H18zM21,6H22V7H21zM22,6H23V7H22zM24,6H25V7H24zM26,6H27V7H26zM27,6H28V7H27zM28,6H29V7H28zM30,6H31V7H30zM2,7H3V8H2zM8,7H9V8H8zM11,7H12V8H11zM12,7H13V8H12zM13,7H14V8H13zM18,7H19V8H18zM22,7H23V8H22zM24,7H25V8H24zM30,7H31V8H30zM2,8H3V9H2zM3,8H4V9H3zM4,8H5V9H4zM5,8H6V9H5zM6,8H7V9H6zM7,8H8V9H7zM8,8H9V9H8zM10,8H11V9H10zM12,8H13V9H12zM14,8H15V9H14zM16,8H17V9H16zM18,8H19V9H18zM20,8H21V9H20zM22,8H23V9H22zM24,8H25V9H24zM25,8H26V9H25zM26,8H27V9H26zM27,8H28V9H27zM28,8H29V9H28zM29,8H30V9H29zM30,8H31V9H30zM10,9H11V10H10zM12,9H13V10H12zM14,9H15V10H14zM16,9H17V10H16zM17,9H18V10H17zM18,9H19V10H18zM2,10H3V11H2zM8,10H9V11H8zM10,10H11V11H10zM12,10H13V11H12zM13,10H14V11H13zM15,10H16V11H15zM16,10H17V11H16zM19,10H20V11H19zM21,10H22V11H21zM23,10H24V11H23zM24,10H25V11H24zM27,10H28V11H27zM28,10H29V11H28zM29,10H30V11H29zM2,11H3V12H2zM3,11H4V12H3zM4,11H5V12H4zM5,11H6V12H5zM6,11H7V12H6zM7,11H8V12H7zM10,11H11V12H10zM14,11H15V12H14zM15,11H16V12H15zM16,11H17V12H16zM17,11H18V12H17zM20,11H21V12H20zM21,11H22V12H21zM23,11H24V12H23zM25,11H26V12H25zM26,11H27V12H26zM28,11H29V12H28zM29,11H30V12H29zM2,12H3V13H2zM5,12H6V13H5zM7,12H8V13H7zM8,12H9V13H8zM9,12H10V13H9zM10,12H11V13H10zM11,12H12V13H11zM12,12H13V13H12zM14,12H15V13H14zM16,12H17V13H16zM17,12H18V13H17zM19,12H20V13H19zM20,12H21V13H20zM22,12H23V13H22zM23,12H24V13H23zM25,12H26V13H25zM26,12H27V13H26zM2,13H3V14H2zM4,13H5V14H4zM5,13H6V14H5zM6,13H7V14H6zM12,13H13V14H12zM14,13H15V14H14zM20,13H21V14H20zM21,13H22V14H21zM22,13H23V14H22zM25,13H26V14H25zM26,13H27V14H26zM27,13H28V14H27zM3,14H4V15H3zM4,14H5V15H4zM5,14H6V15H5zM6,14H7V15H6zM8,14H9V15H8zM9,14H10V15H9zM10,14H11V15H10zM11,14H12V15H11zM14,14H15V15H14zM16,14H17V15H16zM17,14H18V15H17zM20,14H21V15H20zM21,14H22V15H21zM22,14H23V15H22zM24,14H25V15H24zM30,14H31V15H30zM3,15H4V16H3zM4,15H5V16H4zM5,15H6V16H5zM7,15H8V16H7zM15,15H16V16H15zM17,15H18V16H17zM18,15H19V16H18zM19,15H20V16H19zM20,15H21V16H20zM21,15H22V16H21zM22,15H23V16H22zM23,15H24V16H23zM24,15H25V16H24zM25,15H26V16H25zM26,15H27V16H26zM29,15H30V16H29zM30,15H31V16H30zM5,16H6V17H5zM8,16H9V17H8zM11,16H12V17H11zM12,16H13V17H12zM15,16H16V17H15zM16,16H17V17H16zM17,16H18V17H17zM18,16H19V17H18zM19,16H20V17H19zM25,16H26V17H25zM27,16H28V17H27zM28,16H29V17H28zM3,17H4V18H3zM6,17H7V18H6zM7,17H8V18H7zM9,17H10V18H9zM11,17H12V18H11zM12,17H13V18H12zM13,17H14V18H13zM20,17H21V18H20zM21,17H22V18H21zM23,17H24V18H23zM24,17H25V18H24zM25,17H26V18H25zM28,17H29V18H28zM30,17H31V18H30zM2,18H3V19H2zM3,18H4V19H3zM4,18H5V19H4zM6,18H7V19H6zM8,18H9V19H8zM10,18H11V19H10zM11,18H12V19H11zM12,18H13V19H12zM13,18H14V19H13zM19,18H20V19H19zM21,18H22V19H21zM27,18H28V19H27zM28,18H29V19H28zM2,19H3V20H2zM4,19H5V20H4zM6,19H7V20H6zM7,19H8V20H7zM10,19H11V20H10zM14,19H15V20H14zM15,19H16V20H15zM17,19H18V20H17zM19,19H20V20H19zM20,19H21V20H20zM21,19H22V20H21zM24,19H25V20H24zM25,19H26V20H25zM26,19H27V20H26zM28,19H29V20H28zM29,19H30V20H29zM30,19H31V20H30zM2,20H3V21H2zM3,20H4V21H3zM5,20H6V21H5zM7,20H8V21H7zM8,20H9V21H8zM9,20H10V21H9zM13,20H14V21H13zM17,20H18V21H17zM19,20H20V21H19zM20,20H21V21H20zM21,20H22V21H21zM25,20H26V21H25zM27,20H28V21H27zM30,20H31V21H30zM2,21H3V22H2zM4,21H5V22H4zM5,21H6V22H5zM7,21H8V22H7zM9,21H10V22H9zM11,21H12V22H11zM12,21H13V22H12zM14,21H15V22H14zM15,21H16V22H15zM17,21H18V22H17zM24,21H25V22H24zM26,21H27V22H26zM2,22H3V23H2zM4,22H5V23H4zM6,22H7V23H6zM7,22H8V23H7zM8,22H9V23H8zM9,22H10V23H9zM13,22H14V23H13zM16,22H17V23H16zM17,22H18V23H17zM18,22H19V23H18zM19,22H20V23H19zM22,22H23V23H22zM23,22H24V23H23zM24,22H25V23H24zM25,22H26V23H25zM26,22H27V23H26zM28,22H29V23H28zM29,22H30V23H29zM30,22H31V23H30zM10,23H11V24H10zM11,23H12V24H11zM12,23H13V24H12zM13,23H14V24H13zM16,23H17V24H16zM17,23H18V24H17zM19,23H20V24H19zM20,23H21V24H20zM22,23H23V24H22zM26,23H27V24H26zM27,23H28V24H27zM2,24H3V25H2zM3,24H4V25H3zM4,24H5V25H4zM5,24H6V25H5zM6,24H7V25H6zM7,24H8V25H7zM8,24H9V25H8zM13,24H14V25H13zM14,24H15V25H14zM17,24H18V25H17zM19,24H20V25H19zM21,24H22V25H21zM22,24H23V25H22zM24,24H25V25H24zM26,24H27V25H26zM27,24H28V25H27zM28,24H29V25H28zM2,25H3V26H2zM8,25H9V26H8zM12,25H13V26H12zM14,25H15V26H14zM16,25H17V26H16zM18,25H19V26H18zM21,25H22V26H21zM22,25H23V26H22zM26,25H27V26H26zM2,26H3V27H2zM4,26H5V27H4zM5,26H6V27H5zM6,26H7V27H6zM8,26H9V27H8zM11,26H12V27H11zM12,26H13V27H12zM14,26H15V27H14zM15,26H16V27H15zM16,26H17V27H16zM17,26H18V27H17zM18,26H19V27H18zM20,26H21V27H20zM21,26H22V27H21zM22,26H23V27H22zM23,26H24V27H23zM24,26H25V27H24zM25,26H26V27H25zM26,26H27V27H26zM27,26H28V27H27zM29,26H30V27H29zM2,27H3V28H2zM4,27H5V28H4zM5,27H6V28H5zM6,27H7V28H6zM8,27H9V28H8zM12,27H13V28H12zM14,27H15V28H14zM16,27H17V28H16zM17,27H18V28H17zM18,27H19V28H18zM19,27H20V28H19zM20,27H21V28H20zM23,27H24V28H23zM25,27H26V28H25zM27,27H28V28H27zM28,27H29V28H28zM30,27H31V28H30zM2,28H3V29H2zM4,28H5V29H4zM5,28H6V29H5zM6,28H7V29H6zM8,28H9V29H8zM11,28H12V29H11zM13,28H14V29H13zM17,28H18V29H17zM18,28H19V29H18zM19,28H20V29H19zM21,28H22V29H21zM23,28H24V29H23zM24,28H25V29H24zM25,28H26V29H25zM26,28H27V29H26zM27,28H28V29H27zM28,28H29V29H28zM29,28H30V29H29zM2,29H3V30H2zM8,29H9V30H8zM11,29H12V30H11zM12,29H13V30H12zM15,29H16V30H15zM16,29H17V30H16zM17,29H18V30H17zM25,29H26V30H25zM27,29H28V30H27zM28,29H29V30H28zM30,29H31V30H30zM2,30H3V31H2zM3,30H4V31H3zM4,30H5V31H4zM5,30H6V31H5zM6,30H7V31H6zM7,30H8V31H7zM8,30H9V31H8zM10,30H11V31H10zM11,30H12V31H11zM12,30H13V31H12zM13,30H14V31H13zM14,30H15V31H14zM19,30H20V31H19zM21,30H22V31H21zM25,30H26V31H25zM26,30H27V31H26zM28,30H29V31H28z" fill="#050A1D"/></svg><p><span class="t" lang="es">Escaneá el código QR para abrir el portal en tu celular, o copiá el enlace y enviálo por WhatsApp.</span><span class="t" lang="gn">Eiporu QR eipe'a hag̃ua portal ne celular-pe, térã ehupyty link ha emondo WhatsApp rupi.</span><span class="t" lang="en">Scan the QR code to open the portal on your phone, or copy the link and send it on WhatsApp.</span></p></div>
+          <p class="res-estado" id="copiar-estado" aria-live="polite"></p>
+          <div class="cta-row">
+            <button type="button" class="btn btn-main btn-chico" id="copiar-link"><span class="t" lang="es">Copiar enlace</span><span class="t" lang="gn">Ehupyty link</span><span class="t" lang="en">Copy link</span></button>
+            <a class="btn btn-ghost btn-chico" id="compartir-wa" href="https://wa.me/?text=" rel="noopener" target="_blank"><span class="t" lang="es">Enviar por WhatsApp</span><span class="t" lang="gn">Emondo WhatsApp rupi</span><span class="t" lang="en">Send on WhatsApp</span></a>
+            <a class="btn btn-ghost btn-chico" href="recursos/Guia_rapida_ODS.pdf" target="_blank" rel="noopener"><span class="t" lang="es">Guía rápida (PDF)</span><span class="t" lang="gn">Guía pya'e (PDF)</span><span class="t" lang="en">Quick guide (PDF)</span></a>
+            <a class="btn btn-ghost btn-chico" href="manual/" target="_blank" rel="noopener"><span class="t" lang="es">Manual de usuario</span><span class="t" lang="gn">Manual jeporurã</span><span class="t" lang="en">User guide</span></a>
+          </div>
+        </div>
+        <div class="acceso-card">
+          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6M9 10h.01M15 10h.01M12 10h.01"/></svg><span class="t" lang="es">Canal oficial del Workshop</span><span class="t" lang="gn">Workshop renda oficial</span><span class="t" lang="en">Official Workshop channel</span></h3>
+          <div class="canal-logo">Ingeniería 360°</div>
+          <p><span class="t" lang="es">SDGs for everyone es el canal formal de divulgación de los Objetivos de Desarrollo Sostenible del Workshop de Ingeniería “Ingeniería Sostenible: Tecnología con Impacto” de la Facultad de Ingeniería de UNIDA. Los 17 objetivos son los ejes de los proyectos que se presentan en el evento.</span><span class="t" lang="gn">SDGs for everyone ha'e Workshop de Ingeniería “Ingeniería Sostenible: Tecnología con Impacto”, UNIDA Facultad de Ingeniería pegua, ODS momarandu renda oficial. Umi 17 tembipota ha'e umi proyecto oñemoherakuãva upépe rehegua.</span><span class="t" lang="en">SDGs for everyone is the official outreach channel for the Sustainable Development Goals of the UNIDA School of Engineering workshop "Sustainable Engineering: Technology with Impact". The 17 goals are the themes of the projects presented at the event.</span></p>
+          <div class="cta-row">
+            <a class="btn btn-main btn-chico" href="https://www.unida.edu.py/ingenieria-360/" rel="noopener" target="_blank" data-externo><span class="t" lang="es">Ver Ingeniería 360° en unida.edu.py</span><span class="t" lang="gn">Ehecha Ingeniería 360° unida.edu.py-pe</span><span class="t" lang="en">See Engineering 360° at unida.edu.py</span></a>
+            <a class="btn btn-ghost btn-chico" href="#objetivos" data-filtro-workshop><span class="t" lang="es">Ver los ejes del Workshop</span><span class="t" lang="gn">Ehecha Workshop rehegua</span><span class="t" lang="en">See the Workshop themes</span></a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section class="seccion about oscuro" id="que-son" aria-labelledby="t-que-son">
@@ -993,7 +1058,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
             </g>
           </svg>
           <div class="wheel-center" aria-hidden="true">
-            <div><span class="wc-num">2030</span><span class="wc-sub"><span class="t" lang="es">5 áreas · 17 objetivos</span><span class="t" lang="gn">5 aty · 17 tembipota</span><span class="t" lang="en">5 areas · 17 goals</span></span></div>
+            <div><span class="wc-num">2030</span><span class="wc-sub"><span class="t" lang="es">5 áreas, 17 objetivos</span><span class="t" lang="gn">5 aty, 17 tembipota</span><span class="t" lang="en">5 areas, 17 goals</span></span></div>
           </div>
         </div>
         <div class="areas-info" id="areas-info">
@@ -1435,7 +1500,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       </div>
       <div class="passport">
         <h3 class="passport-t"><span class="t" lang="es">Tu pasaporte ODS</span><span class="t" lang="gn">Ne pasaporte ODS</span><span class="t" lang="en">Your SDG passport</span></h3>
-        <p class="passport-sub"><span class="t" lang="es">10 preguntas · se cuenta tu tiempo</span><span class="t" lang="gn">10 porandu · ojepapa ne aravo</span><span class="t" lang="en">10 questions · your time counts</span></p>
+        <p class="passport-sub"><span class="t" lang="es">10 preguntas, se cuenta tu tiempo</span><span class="t" lang="gn">10 porandu, ojepapa ne aravo</span><span class="t" lang="en">10 questions, your time counts</span></p>
         <div id="trivia-app">
           <p class="sin-js"><span class="t" lang="es">La trivia necesita JavaScript. Si abriste este archivo desde WhatsApp o una vista previa, abrilo con Chrome, Safari o Edge.</span><span class="t" lang="gn">Porandu oikotevẽ JavaScript. Reipe'áramo ko archivo WhatsApp térã vista previa guive, eipe'a Chrome, Safari térã Edge reheve.</span><span class="t" lang="en">The quiz needs JavaScript. If you opened this file from WhatsApp or a preview, open it in Chrome, Safari or Edge.</span></p>
         </div>
@@ -1564,8 +1629,8 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       <div class="juego" role="tabpanel" id="panel-memo" aria-labelledby="tab-memo" tabindex="0">
         <p class="juego-intro"><span class="t" lang="es">Tocá dos cartas por vez y uní cada ícono con el nombre de su ODS.</span><span class="t" lang="gn">Epoko mokõi kárta peteĩ jey ha embojoaju peteĩ teĩ ra'ãnga ODS rérandi.</span><span class="t" lang="en">Tap two cards at a time and match each icon with the name of its SDG.</span></p>
         <div class="nivel" id="mm-nivel" role="group" aria-label="Nivel / Nivel / Level">
-          <button type="button" data-pares="6" aria-pressed="true"><span class="t" lang="es">Fácil · 6 parejas</span><span class="t" lang="gn">Hasy'ỹ · 6 joja</span><span class="t" lang="en">Easy · 6 pairs</span></button>
-          <button type="button" data-pares="8" aria-pressed="false"><span class="t" lang="es">Difícil · 8 parejas</span><span class="t" lang="gn">Hasy · 8 joja</span><span class="t" lang="en">Hard · 8 pairs</span></button>
+          <button type="button" data-pares="6" aria-pressed="true"><span class="t" lang="es">Fácil: 6 parejas</span><span class="t" lang="gn">Hasy'ỹ: 6 joja</span><span class="t" lang="en">Easy: 6 pairs</span></button>
+          <button type="button" data-pares="8" aria-pressed="false"><span class="t" lang="es">Difícil: 8 parejas</span><span class="t" lang="gn">Hasy: 8 joja</span><span class="t" lang="en">Hard: 8 pairs</span></button>
         </div>
         <div class="marcador" id="mm-marcador">
           <span><span class="t" lang="es">Intentos</span><span class="t" lang="gn">Jey</span><span class="t" lang="en">Tries</span><b id="mm-intentos">0</b></span>
@@ -1657,21 +1722,23 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       <p class="big"><span class="t" lang="es">No dejar a </span><span class="t" lang="gn">Avave ani </span><span class="t" lang="en">Leave no one </span><span class="b2"><span class="t" lang="es">nadie atrás</span><span class="t" lang="gn">opyta tapykuépe</span><span class="t" lang="en">behind</span></span></p>
       <div>
         <dl>
-          <div><dt>Portal</dt><dd><span class="t" lang="es">SDGs for everyone · educativo y no oficial</span><span class="t" lang="gn">SDGs for everyone · mbo'epy, ndaha'éi oficial</span><span class="t" lang="en">SDGs for everyone · educational, unofficial</span></dd></div>
+          <div><dt>Portal</dt><dd><span class="t" lang="es">SDGs for everyone, educativo y no oficial</span><span class="t" lang="gn">SDGs for everyone, mbo'epy, ndaha'éi oficial</span><span class="t" lang="en">SDGs for everyone, educational, unofficial</span></dd></div>
           <div><dt><span class="t" lang="es">Fuente</span><span class="t" lang="gn">Fuente</span><span class="t" lang="en">Source</span></dt><dd><span class="t" lang="es">Agenda 2030 de las Naciones Unidas</span><span class="t" lang="gn">Agenda 2030 Tetã Ñemohenda (ONU) pegua</span><span class="t" lang="en">United Nations 2030 Agenda</span></dd></div>
-          <div><dt><span class="t" lang="es">Idiomas</span><span class="t" lang="gn">Ñe'ẽ</span><span class="t" lang="en">Languages</span></dt><dd>Castellano · Avañe'ẽ · English</dd></div>
-          <div><dt><span class="t" lang="es">Facultad</span><span class="t" lang="gn">Facultad</span><span class="t" lang="en">School</span></dt><dd><span class="t" lang="es">Facultad de Ingeniería · UNIDA</span><span class="t" lang="gn">Facultad de Ingeniería · UNIDA</span><span class="t" lang="en">School of Engineering · UNIDA</span></dd></div>
+          <div><dt><span class="t" lang="es">Idiomas</span><span class="t" lang="gn">Ñe'ẽ</span><span class="t" lang="en">Languages</span></dt><dd>Castellano, Avañe'ẽ, English</dd></div>
+          <div><dt><span class="t" lang="es">Facultad</span><span class="t" lang="gn">Facultad</span><span class="t" lang="en">School</span></dt><dd><span class="t" lang="es">Facultad de Ingeniería, UNIDA</span><span class="t" lang="gn">Facultad de Ingeniería, UNIDA</span><span class="t" lang="en">School of Engineering, UNIDA</span></dd></div>
         </dl>
         <div class="cta-row">
           <a class="btn btn-main" href="https://sdgs.un.org/es/goals" data-href-es="https://sdgs.un.org/es/goals" data-href-gn="https://sdgs.un.org/es/goals" data-href-en="https://sdgs.un.org/goals" rel="noopener" data-externo><span class="t" lang="es">Sitio oficial de los ODS</span><span class="t" lang="gn">ODS ONU sitio</span><span class="t" lang="en">Official SDG website</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+          <a class="btn btn-ghost" href="manual/" target="_blank" rel="noopener"><span class="t" lang="es">Manual de usuario</span><span class="t" lang="gn">Manual jeporurã</span><span class="t" lang="en">User guide</span></a>
           <a class="btn btn-ghost" href="#arriba"><span class="t" lang="es">Volver arriba</span><span class="t" lang="gn">Ejevy yvate gotyo</span><span class="t" lang="en">Back to top</span></a>
           <button type="button" class="btn btn-ghost" id="kiosco-btn"><span class="k-on"><span class="t" lang="es">Modo pantalla (expo)</span><span class="t" lang="gn">Modo pantalla (expo)</span><span class="t" lang="en">Screen mode (expo)</span></span><span class="k-off"><span class="t" lang="es">Salir del modo pantalla</span><span class="t" lang="gn">Esẽ modo pantalla-gui</span><span class="t" lang="en">Exit screen mode</span></span></button>
         </div>
       </div>
     </div>
     <div class="org">
-      <div><strong><span class="t" lang="es">Programación para Internet</span><span class="t" lang="gn">Programación para Internet</span><span class="t" lang="en">Internet Programming</span></strong><span class="t" lang="es">Facultad de Ingeniería · Universidad de la Integración de las Américas</span><span class="t" lang="gn">Facultad de Ingeniería · Universidad de la Integración de las Américas</span><span class="t" lang="en">School of Engineering · Universidad de la Integración de las Américas</span></div>
-      <div><strong>Agenda 2030</strong><span class="t" lang="es">Objetivos de Desarrollo Sostenible · Naciones Unidas</span><span class="t" lang="gn">Tembipota Tekoporã Ipukúva · ONU</span><span class="t" lang="en">Sustainable Development Goals · United Nations</span></div>
+      <div><strong><span class="t" lang="es">Programación para Internet</span><span class="t" lang="gn">Programación para Internet</span><span class="t" lang="en">Internet Programming</span></strong><span class="t" lang="es">Facultad de Ingeniería, Universidad de la Integración de las Américas</span><span class="t" lang="gn">Facultad de Ingeniería, Universidad de la Integración de las Américas</span><span class="t" lang="en">School of Engineering, Universidad de la Integración de las Américas</span></div>
+      <div><strong>Workshop Ingeniería 360°</strong><span class="t" lang="es">Canal formal de divulgación de los ODS: <a href="https://www.unida.edu.py/ingenieria-360/" rel="noopener" target="_blank">unida.edu.py/ingenieria-360</a></span><span class="t" lang="gn">ODS momarandu renda oficial: <a href="https://www.unida.edu.py/ingenieria-360/" rel="noopener" target="_blank">unida.edu.py/ingenieria-360</a></span><span class="t" lang="en">Official SDG outreach channel: <a href="https://www.unida.edu.py/ingenieria-360/" rel="noopener" target="_blank">unida.edu.py/ingenieria-360</a></span></div>
+      <div><strong>Agenda 2030</strong><span class="t" lang="es">Objetivos de Desarrollo Sostenible, Naciones Unidas</span><span class="t" lang="gn">Tembipota Tekoporã Ipukúva, ONU</span><span class="t" lang="en">Sustainable Development Goals, United Nations</span></div>
     </div>
     <div class="legal texto">
       <p><span class="t" lang="es">SDGs for everyone es un portal educativo no oficial. Los contenidos resumen la Agenda 2030 de las Naciones Unidas; los colores de cada objetivo siguen su identidad visual.</span><span class="t" lang="gn">SDGs for everyone ha'e peteĩ portal mbo'epy ndaha'éiva oficial. Umi marandu omombyky Agenda 2030 Tetã Ñemohenda (ONU) pegua; umi sa'y ojapo hembiapoite.</span><span class="t" lang="en">SDGs for everyone is an unofficial educational portal. Its content summarizes the United Nations 2030 Agenda; each goal's colors follow its visual identity.</span></p>
@@ -1681,11 +1748,11 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
 <div class="atraer" id="atraer" role="dialog" aria-modal="true" aria-labelledby="atraer-t" hidden>
   <div class="atraer-anillo" aria-hidden="true"><span class="orbita" style="--a:0.00deg"><span class="ico-caja" data-n="1" style="--c0:#E5243B;--t0:#FFFFFF"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-1"/></svg></span></span><span class="orbita" style="--a:21.18deg"><span class="ico-caja" data-n="2" style="--c0:#DDA63A;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-2"/></svg></span></span><span class="orbita" style="--a:42.35deg"><span class="ico-caja" data-n="3" style="--c0:#4C9F38;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-3"/></svg></span></span><span class="orbita" style="--a:63.53deg"><span class="ico-caja" data-n="4" style="--c0:#C5192D;--t0:#FFFFFF"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-4"/></svg></span></span><span class="orbita" style="--a:84.71deg"><span class="ico-caja" data-n="5" style="--c0:#FF3A21;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-5"/></svg></span></span><span class="orbita" style="--a:105.88deg"><span class="ico-caja" data-n="6" style="--c0:#26BDE2;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-6"/></svg></span></span><span class="orbita" style="--a:127.06deg"><span class="ico-caja" data-n="7" style="--c0:#FCC30B;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-7"/></svg></span></span><span class="orbita" style="--a:148.24deg"><span class="ico-caja" data-n="8" style="--c0:#A21942;--t0:#FFFFFF"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-8"/></svg></span></span><span class="orbita" style="--a:169.41deg"><span class="ico-caja" data-n="9" style="--c0:#FD6925;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-9"/></svg></span></span><span class="orbita" style="--a:190.59deg"><span class="ico-caja" data-n="10" style="--c0:#DD1367;--t0:#FFFFFF"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-10"/></svg></span></span><span class="orbita" style="--a:211.76deg"><span class="ico-caja" data-n="11" style="--c0:#FD9D24;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-11"/></svg></span></span><span class="orbita" style="--a:232.94deg"><span class="ico-caja" data-n="12" style="--c0:#BF8B2E;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-12"/></svg></span></span><span class="orbita" style="--a:254.12deg"><span class="ico-caja" data-n="13" style="--c0:#3F7E44;--t0:#FFFFFF"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-13"/></svg></span></span><span class="orbita" style="--a:275.29deg"><span class="ico-caja" data-n="14" style="--c0:#0A97D9;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-14"/></svg></span></span><span class="orbita" style="--a:296.47deg"><span class="ico-caja" data-n="15" style="--c0:#56C02B;--t0:#0B1B2B"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-15"/></svg></span></span><span class="orbita" style="--a:317.65deg"><span class="ico-caja" data-n="16" style="--c0:#00689D;--t0:#FFFFFF"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-16"/></svg></span></span><span class="orbita" style="--a:338.82deg"><span class="ico-caja" data-n="17" style="--c0:#19486A;--t0:#FFFFFF"><svg class="ods-ico" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#ods-i-17"/></svg></span></span></div>
   <div class="atraer-texto">
-    <h2 class="atraer-marca" id="atraer-t"><span class="word" lang="en">SDGs</span> <span class="deg" lang="en">for everyone</span></h2>
+    <h2 class="atraer-marca" id="atraer-t"><span class="deg" lang="en">SDGs for everyone</span> <span class="word">ODS</span><span class="full"><span class="t" lang="es">Objetivos de Desarrollo Sostenible</span><span class="t" lang="gn">Tembipota Tekoporã Ipukúva</span><span class="t" lang="en">Sustainable Development Goals</span></span></h2>
     <p lang="es">Tocá la pantalla para jugar y aprender</p>
     <p lang="gn">Epoko pantalla ehugua ha eñemoarandu hag̃ua</p>
     <p lang="en">Tap the screen to play and learn</p>
-    <button type="button" class="btn btn-main btn-grande" id="atraer-btn"><span lang="es">Empezar</span> · <span lang="gn">Eñepyrũ</span> · <span lang="en">Start</span></button>
+    <button type="button" class="btn btn-main btn-grande" id="atraer-btn"><span lang="es">Empezar</span> / <span lang="gn">Eñepyrũ</span> / <span lang="en">Start</span></button>
   </div>
 </div>
 <div class="inactivo" id="inactivo" role="alertdialog" aria-modal="true" aria-labelledby="inactivo-t" aria-describedby="inactivo-d" hidden>
@@ -2276,7 +2343,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       contTrivia.appendChild(casillaAuto());
     } else if (tr.fase === 'pregunta') {
       var q = TRIVIA[tr.i];
-      var prog = el('p', { class: 'progreso' }, L().progreso(tr.i + 1) + ' · ');
+      var prog = el('p', { class: 'progreso' }, L().progreso(tr.i + 1) + ', ');
       prog.appendChild(el('span', { id: 'trivia-reloj' }, reloj(Math.floor(msTrivia() / 1000))));
       contTrivia.appendChild(prog);
       var barra = el('div', { class: 'barra-prog', 'aria-hidden': 'true' });
@@ -2450,9 +2517,9 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       elegiOds: 'Elegí un ODS para tu compromiso.', escribiCompromiso: 'Escribí tu compromiso.',
       palabras: 'Revisá el texto: tiene palabras que no se pueden publicar.',
       publicado: '¡Listo! Tu compromiso ya está en el muro.', muroVacio: 'Todavía no hay compromisos. ¡Sé la primera persona!',
-      muroStats: function (n, top) { return n + (n === 1 ? ' compromiso' : ' compromisos') + ' · ODS más elegido: ' + top; },
+      muroStats: function (n, top) { return n + (n === 1 ? ' compromiso' : ' compromisos') + '. ODS más elegido: ' + top; },
       ejemplo: 'Por ejemplo: ', borrar: 'Borrar este compromiso', compromisoCon: 'Compromiso con el ',
-      muroLista: 'Compromisos publicados', tituloJuegos: 'Zona de juegos · SDGs for everyone'
+      muroLista: 'Compromisos publicados', tituloJuegos: 'Zona de juegos, SDGs for everyone'
     },
     gn: {
       carta: function (i) { return 'Kárta ' + i; }, bocaAbajo: 'ñemi', icono: "ra'ãnga", nombre: 'téra', encontrada: 'ojuhúma ijoja',
@@ -2481,9 +2548,9 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       elegiOds: 'Eiporavo peteĩ ODS.', escribiCompromiso: "Ehai ne ñe'ẽme'ẽ.",
       palabras: "Ehesa'ỹijo moñe'ẽ: oguereko ñe'ẽ ndaikatúiva ojehechauka.",
       publicado: "¡Oĩma! Ne ñe'ẽme'ẽ oĩma muro-pe.", muroVacio: "Ndaipóri gueteri ñe'ẽme'ẽ. ¡Eñepyrũ nde!",
-      muroStats: function (n, top) { return n + " ñe'ẽme'ẽ · ODS ojeporavovéva: " + top; },
+      muroStats: function (n, top) { return n + " ñe'ẽme'ẽ. ODS ojeporavovéva: " + top; },
       ejemplo: 'Techapyrã: ', borrar: "Embogue ko ñe'ẽme'ẽ", compromisoCon: "Ñe'ẽme'ẽ ",
-      muroLista: "Ñe'ẽme'ẽ oñemoherakuãva", tituloJuegos: 'Ñembosarái renda · SDGs for everyone'
+      muroLista: "Ñe'ẽme'ẽ oñemoherakuãva", tituloJuegos: 'Ñembosarái renda, SDGs for everyone'
     },
     en: {
       carta: function (i) { return 'Card ' + i; }, bocaAbajo: 'face down', icono: 'icon', nombre: 'name', encontrada: 'match found',
@@ -2512,9 +2579,9 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       elegiOds: 'Choose an SDG for your pledge.', escribiCompromiso: 'Write your pledge.',
       palabras: "Check the text: it has words that can't be published.",
       publicado: 'Done! Your pledge is on the wall.', muroVacio: 'No pledges yet. Be the first!',
-      muroStats: function (n, top) { return n + (n === 1 ? ' pledge' : ' pledges') + ' · Most chosen: ' + top; },
+      muroStats: function (n, top) { return n + (n === 1 ? ' pledge' : ' pledges') + '. Most chosen: ' + top; },
       ejemplo: 'For example: ', borrar: 'Delete this pledge', compromisoCon: 'Pledge for ',
-      muroLista: 'Published pledges', tituloJuegos: 'Game zone · SDGs for everyone'
+      muroLista: 'Published pledges', tituloJuegos: 'Game zone, SDGs for everyone'
     }
   };
   function LG() { return G[prefs.idioma]; }
@@ -3104,7 +3171,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       adCaja.appendChild(opcionesAdivina());
     } else if (ad.fase === 'jugando') {
       var q = ad.preguntas[ad.ronda], o = POR_N[q.n];
-      var h = el('h3', { class: 'ad-pregunta', tabindex: '-1' }, L.ronda(ad.ronda + 1, RONDAS) + ' · ' + (q.tipo === 'a' ? L.preguntaAccion : L.preguntaMeta));
+      var h = el('h3', { class: 'ad-pregunta', tabindex: '-1' }, L.ronda(ad.ronda + 1, RONDAS) + ', ' + (q.tipo === 'a' ? L.preguntaAccion : L.preguntaMeta));
       adCaja.appendChild(h);
       adCaja.appendChild(el('blockquote', { class: 'pista' }, tr3(q.tipo === 'a' ? o.a : o.m)));
       if (ad.eleccion === null && ad.limite) {
@@ -3232,7 +3299,7 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
       li.style.setProperty('--giro', ((numeroDe(nota.id) % 5) - 2) * 0.8 + 'deg');
       var cab = el('div', { class: 'nota-cab' });
       cab.appendChild(cajaIcono(o.n));
-      cab.appendChild(el('span', null, L.odsN(o.n) + ' · ' + tr3(o.t)));
+      cab.appendChild(el('span', null, L.odsN(o.n) + ': ' + tr3(o.t)));
       li.appendChild(cab);
       li.appendChild(el('p', null, nota.texto));
       li.appendChild(el('small', null, '— ' + (nota.nombre || L.anonimo)));
@@ -3473,6 +3540,73 @@ kbd{font-family:inherit;font-size:.78rem;font-weight:600;padding:.1rem .45rem;bo
   aplicar();
   aplicarIdioma(false);
   iniciarJuegos();
+})();
+</script>
+<script>
+(function () {
+  /* SDGs for everyone, acceso rápido: buscador de objetivos, compartir y canal del Workshop */
+  var URL_PORTAL = 'https://groupunida.github.io/ods-portal/';
+  var raiz = document.documentElement;
+  function idioma() { return raiz.getAttribute('data-idioma') || 'es'; }
+  function texto(el, l) { var s = el && el.querySelector('.t[lang="' + l + '"]'); return s ? s.textContent.trim() : (el ? el.textContent.trim() : ''); }
+  function normal(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+  var T = {
+    es: { vacio: 'Escribí al menos 2 letras.', nada: 'No encontramos objetivos con esa palabra.', uno: '1 objetivo encontrado.', varios: ' objetivos encontrados.', copiado: 'Enlace copiado: ', nocopia: 'No se pudo copiar. El enlace es: ' },
+    gn: { vacio: 'Ehai mokõi letra jepe.', nada: 'Ndorojuhúi tembipota upe ñe\'ẽ reheve.', uno: '1 tembipota ojejuhu.', varios: ' tembipota ojejuhu.', copiado: 'Link ojehupyty: ', nocopia: 'Ndaikatúi ojehupyty. Link ha\'e: ' },
+    en: { vacio: 'Type at least 2 letters.', nada: 'No goals match that word.', uno: '1 goal found.', varios: ' goals found.', copiado: 'Link copied: ', nocopia: 'Could not copy. The link is: ' }
+  };
+  var fichas = Array.prototype.map.call(document.querySelectorAll('li.ods[data-n]'), function (li) {
+    var h3 = li.querySelector('h3'), desc = li.querySelector('.desc'), lf = li.querySelector('.lf'), mas = li.querySelector('.mas');
+    var datos = { n: li.getAttribute('data-n'), c0: li.style.getPropertyValue('--c0'), t0: li.style.getPropertyValue('--t0'), id: li.id };
+    ['es', 'gn', 'en'].forEach(function (l) {
+      var titulo = Array.prototype.filter.call(h3.querySelectorAll('.t[lang="' + l + '"]'), function (s) { return !s.classList.contains('sr'); }).map(function (s) { return s.textContent; }).join(' ').trim();
+      datos['titulo_' + l] = titulo;
+      datos['desc_' + l] = texto(desc, l);
+      datos['indice_' + l] = normal([titulo, texto(desc, l), texto(lf, l), mas ? Array.prototype.map.call(mas.querySelectorAll('.t[lang="' + l + '"]'), function (s) { return s.textContent; }).join(' ') : ''].join(' '));
+    });
+    return datos;
+  });
+  var entrada = document.getElementById('buscar-ods'), lista = document.getElementById('res-ods'), estado = document.getElementById('res-estado');
+  function buscar() {
+    var l = idioma(), q = normal(entrada.value.trim());
+    lista.innerHTML = '';
+    if (q.length < 2) { estado.textContent = q.length ? T[l].vacio : ''; return; }
+    var palabras = q.split(/\s+/);
+    var res = fichas.filter(function (f) { return palabras.every(function (p) { return f['indice_' + l].indexOf(p) !== -1; }); });
+    if (!res.length) { estado.textContent = T[l].nada; return; }
+    estado.textContent = res.length === 1 ? T[l].uno : res.length + T[l].varios;
+    res.forEach(function (f) {
+      var a = document.createElement('a');
+      a.href = '#' + f.id;
+      a.style.setProperty('--c0', f.c0); a.style.setProperty('--t0', f.t0);
+      a.innerHTML = '<span class="res-num" aria-hidden="true">' + f.n + '</span><span><b></b><small></small></span>';
+      a.querySelector('b').textContent = f['titulo_' + l];
+      a.querySelector('small').textContent = f['desc_' + l];
+      a.addEventListener('click', function () {
+        var li = document.getElementById(f.id), det = li && li.querySelector('details');
+        if (det) det.open = true;
+        setTimeout(function () { if (li) li.focus(); }, 300);
+      });
+      var item = document.createElement('li'); item.appendChild(a); lista.appendChild(item);
+    });
+  }
+  if (entrada) {
+    entrada.addEventListener('input', buscar);
+    document.querySelectorAll('[data-idioma-btn]').forEach(function (b) { b.addEventListener('click', function () { setTimeout(function () { entrada.placeholder = entrada.getAttribute('data-ph-' + idioma()) || ''; buscar(); }, 0); }); });
+    entrada.placeholder = entrada.getAttribute('data-ph-' + idioma()) || entrada.placeholder;
+  }
+  var enlace = /^https?:/.test(location.href) ? location.href.split('#')[0] : URL_PORTAL;
+  var wa = document.getElementById('compartir-wa');
+  if (wa) wa.href = 'https://wa.me/?text=' + encodeURIComponent('SDGs for everyone: Objetivos de Desarrollo Sostenible para todas las personas. ' + enlace);
+  var copiar = document.getElementById('copiar-link'), copiado = document.getElementById('copiar-estado');
+  if (copiar) copiar.addEventListener('click', function () {
+    var l = idioma();
+    function ok() { copiado.textContent = T[l].copiado + enlace; }
+    function falla() { copiado.textContent = T[l].nocopia + enlace; }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(enlace).then(ok, falla); else falla();
+  });
+  var ejes = document.querySelector('[data-filtro-workshop]');
+  if (ejes) ejes.addEventListener('click', function () { var b = document.querySelector('#filtros [data-area="workshop"]'); if (b) setTimeout(function () { b.click(); }, 50); });
 })();
 </script>
 </body>
